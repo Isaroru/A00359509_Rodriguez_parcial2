@@ -35,8 +35,10 @@ void loop(){
     for(int i= 0; i < 5; i ++){
       //mapValue = map(humValue, 0, 876, 0, 100);
       digitalWrite(LEDS[i], HIGH);
-        }else if(mapValue < 100){
+    }
+    } else if(mapValue < 100){
+      for(int i= 0; i < 5; i ++){
           digitalWrite(LEDS[i], LOW);
       }
-    } 
+  }
 }
